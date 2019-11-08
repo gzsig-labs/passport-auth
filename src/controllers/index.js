@@ -1,5 +1,6 @@
-const {PageHome} = require('./pagesController')
+const UserRoutes = require('./users')
+const PageRoutes = require('./pages')
 
-const Page = {PageHome}
 
-module.exports = {Page}
+
+module.exports = {UserRoutes, PageRoutes}
