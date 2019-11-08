@@ -1,7 +1,11 @@
-const loginPost = (req, res) => {
-  console.log(req.body.username);
-  console.log(req.body.password);
-  res.redirect('/users')
-};
+const passport = require("passport");
+
+const loginPost = passport.authenticate("local", {
+  successRedirect: "/",
+  failureRedirect: "/login",
+  failureFlash: true,
+  passReqToCallback: true
+});
+
 
 module.exports = {loginPost}

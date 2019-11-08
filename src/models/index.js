@@ -1,3 +1,3 @@
 const UserModel = require('./User');
 
-module.exports = {UserModel}
+module.exports = {User: UserModel}
