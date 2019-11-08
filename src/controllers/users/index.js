@@ -1,4 +1,6 @@
-const {list} = require('./list')
+const {list} = require('./userList')
+const {signUp} = require('./userSignUp')
+const {signUpPost} = require('./userSignUpPost')
 
 
-module.exports = {list}
+module.exports = {list, signUp, signUpPost}
