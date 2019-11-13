@@ -5,11 +5,15 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 const viewsPath = `${root}/views`;
 
+const flash = require("connect-flash");
+
 const session = require("express-session");
 const {passportConfig} = require("./passportConfig");
 
 const {pageRouter} = require('../routes/page')
 const {userRouter} = require('../routes/user')
+
+app.use(flash());
 
 app.use(session({
   secret: "our-passport-local-strategy-app",

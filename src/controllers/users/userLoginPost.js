@@ -1,7 +1,7 @@
 const passport = require("passport");
 
 const loginPost = passport.authenticate("local", {
-  successRedirect: "/",
+  successRedirect: "/user",
   failureRedirect: "/login",
   failureFlash: true,
   passReqToCallback: true
